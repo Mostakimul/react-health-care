@@ -7,6 +7,9 @@ module.exports = {
       center: true,
       padding: '1rem',
     },
+    fontFamily: {
+      fira: ['Fira Sans', 'sans-serif'],
+    },
   },
   variants: {
     extend: {},
