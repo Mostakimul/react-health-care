@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor1.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 2,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor2.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 3,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor3.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 4,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor4.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 5,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor5.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 6,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor6.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 7,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor7.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 8,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor8.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  },
+  {
+    "id": 9,
+    "name":"Dr. Babatunde",
+    "img": "./img/doctor9.jpg",
+    "dept": "Neurosurgeon",
+    "degree": "MBBS in Neurology, PHD in Neurosurgeon",
+    "working": [
+      "Monday 9:00 AM - 8:00 PM",
+      "Tuesday9:00 AM - 8:00 PM",
+      "Wednesday9:00 AM - 8:00 PM",
+      "Sunday9:00 AM - 8:00 PM"
+    ],
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "education": "Master of Neurosurgery at University of University of Exeter Medical School Exeter (2002)"
+  }
+]
