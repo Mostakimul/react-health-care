@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import TheFooter from './components/TheFooter';
 import TheNavbar from './components/TheNavbar';
 import TheNavbarsub from './components/TheNavbarsub';
 import Error from './pages/Error';
@@ -37,6 +38,7 @@ function App() {
           <Error />
         </Route>
       </Switch>
+      <TheFooter />
     </Router>
   );
 }
