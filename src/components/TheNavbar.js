@@ -9,7 +9,7 @@ const TheNavbar = () => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="px-2 sm:px-6 lg:px-8">
+          <div className="px-2 sm:px-6 lg:px-2">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}

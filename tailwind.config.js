@@ -10,6 +10,9 @@ module.exports = {
     fontFamily: {
       fira: ['Fira Sans', 'sans-serif'],
     },
+    animation: {
+      'spin-slow': 'spin 20s linear infinite',
+    },
   },
   variants: {
     extend: {},
