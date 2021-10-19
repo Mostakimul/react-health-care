@@ -1,4 +1,4 @@
-# Dinid Health Care Website
+# Dinis Health Care Website
 
 Live Link: [Dinis Live Link](https://react-healthcare-681a9.web.app/).
 > https://react-healthcare-681a9.web.app/
