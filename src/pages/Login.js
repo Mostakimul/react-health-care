@@ -1,10 +1,38 @@
-import React from 'react';
+import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import bgimg from '../images/page-banner1.jpg';
 
 const Login = () => {
   const { signInUsingGoogle } = useAuth();
+  const [userEmail, setUserEmail] = useState('');
+  const [userPassword, setUserPassword] = useState('');
+  const [error, setError] = useState('');
+  const auth = getAuth();
+
+  // handleLogin
+  const handleLogin = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, userEmail, userPassword)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        setError(errorMessage);
+      });
+  };
+
+  // setUserEmail
+  const handleUserEmail = (e) => {
+    setUserEmail(e.target.value);
+  };
+  // setUserPassword
+  const handleUserPassword = (e) => {
+    setUserPassword(e.target.value);
+  };
   return (
     <div>
       <div
@@ -22,7 +50,7 @@ const Login = () => {
       </div>
       {/* Form section */}
       <div className="container py-5 md:w-3/6">
-        <form className="space-y-3">
+        <form onSubmit={handleLogin} className="space-y-3">
           {/* Email */}
           <label
             htmlFor="email"
@@ -34,6 +62,7 @@ const Login = () => {
             type="email"
             id="email"
             name="email"
+            onBlur={handleUserEmail}
             className="mt-1 p-2 border block w-full shadow sm:text-sm border-gray-200 outline-none focus:border-blue-500  ring-gray-400 rounded-md"
           />
           {/* Password */}
@@ -47,8 +76,11 @@ const Login = () => {
             type="password"
             id="password"
             name="password"
+            onBlur={handleUserPassword}
             className="mt-1 p-2 border block w-full shadow sm:text-sm border-gray-200 outline-none focus:border-blue-500  ring-gray-400 rounded-md"
           />
+          {/* Error */}
+          <p className="text-red-700 font-semibold">{error}</p>
           {/* Button */}
           <button className="bg-blue-800 hover:bg-blue-900 transition delay-75 text-gray-100 py-2 px-2.5 w-full my-1.5 rounded-md shadow-md">
             Sign In

@@ -1,10 +1,60 @@
-import React from 'react';
+import {
+  createUserWithEmailAndPassword,
+  getAuth,
+  updateProfile,
+} from '@firebase/auth';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import bgimg from '../images/page-banner1.jpg';
 
 const Register = () => {
   const { signInUsingGoogle } = useAuth();
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [userPassword, setUserPassword] = useState('');
+  const [error, setError] = useState('');
+  const auth = getAuth();
+
+  // handleRegister
+  const handleRegister = (e) => {
+    e.preventDefault();
+    // password validation
+    if (userPassword.length < 6) {
+      setError('Password must be at least 6 character');
+      return;
+    }
+    // creating user
+    createUserWithEmailAndPassword(auth, userEmail, userPassword)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError('');
+        setDisplayName();
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
+  // setDisplayName
+  const setDisplayName = () => {
+    updateProfile(auth.currentUser, { displayName: userName }).then(() => {});
+  };
+
+  // handleNameChange
+  const handleNameChange = (e) => {
+    setUserName(e.target.value);
+  };
+  // handleEmailChange
+  const handleEmailChange = (e) => {
+    setUserEmail(e.target.value);
+  };
+
+  // handlePasswordChange
+  const handlePasswordChange = (e) => {
+    setUserPassword(e.target.value);
+  };
   return (
     <div>
       <div
@@ -22,7 +72,7 @@ const Register = () => {
       </div>
       {/* Form section */}
       <div className="container py-5 md:w-3/6">
-        <form className="space-y-3">
+        <form onSubmit={handleRegister} className="space-y-3">
           {/* Name */}
           <label
             htmlFor="name"
@@ -33,7 +83,9 @@ const Register = () => {
           <input
             type="text"
             id="name"
+            onBlur={handleNameChange}
             name="name"
+            required
             className="mt-1 p-2 border block w-full shadow sm:text-sm border-gray-200 outline-none focus:border-blue-500  ring-gray-400 rounded-md"
           />
           {/* Email */}
@@ -47,6 +99,8 @@ const Register = () => {
             type="email"
             id="email"
             name="email"
+            onBlur={handleEmailChange}
+            required
             className="mt-1 p-2 border block w-full shadow sm:text-sm border-gray-200 outline-none focus:border-blue-500  ring-gray-400 rounded-md"
           />
           {/* Password */}
@@ -60,8 +114,12 @@ const Register = () => {
             type="password"
             id="password"
             name="password"
+            onBlur={handlePasswordChange}
+            required
             className="mt-1 p-2 border block w-full shadow sm:text-sm border-gray-200 outline-none focus:border-blue-500  ring-gray-400 rounded-md"
           />
+          {/* Error */}
+          <p className="text-red-700 font-semibold">{error}</p>
           {/* Button */}
           <button className="bg-blue-800 hover:bg-blue-900 transition delay-75 text-gray-100 py-2 px-2.5 w-full my-1.5 rounded-md shadow-md">
             Register
