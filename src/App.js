@@ -5,10 +5,10 @@ import TheFooter from './components/TheFooter';
 import TheNavbar from './components/TheNavbar';
 import TheNavbarsub from './components/TheNavbarsub';
 import AuthProvider from './context/AuthProvider';
+import AllDepartments from './pages/AllDepartments';
 import AllDoctors from './pages/AllDoctors';
 import Appointment from './pages/Appointment';
 import Contact from './pages/Contact';
-import Departments from './pages/Departments';
 import DoctorDetails from './pages/DoctorDetails';
 import Error from './pages/Error';
 import Home from './pages/Home';
@@ -37,7 +37,7 @@ function App() {
             <AllDoctors />
           </Route>
           <Route path="/all-departments">
-            <Departments />
+            <AllDepartments />
           </Route>
           <Route path="/doctor-details/:docId">
             <DoctorDetails />

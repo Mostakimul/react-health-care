@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bgimg from '../images/home-slider-bg.jpg';
 
 const TheHeader = () => {
@@ -33,9 +34,12 @@ const TheHeader = () => {
           </h3>
 
           <div className="flex justify-center md:justify-start items-center">
-            <button className="bg-white text-blue-600 font-medium px-4 py-2 rounded-md mx-1">
+            <Link
+              to="/appointment"
+              className="bg-white text-blue-600 font-medium px-4 py-2 rounded-md mx-1"
+            >
               Get Appointment
-            </button>
+            </Link>
             <button className="bg-transparent border-2 border-white text-white font-medium px-4 py-2 rounded-md mx-1">
               Learn More
             </button>
