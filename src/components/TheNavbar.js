@@ -47,6 +47,30 @@ const TheNavbar = () => {
                     >
                       Home
                     </Link>
+                    <Link
+                      to="/all-doctors"
+                      className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >
+                      All Doctors
+                    </Link>
+                    <Link
+                      to="/all-departments"
+                      className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >
+                      Departments
+                    </Link>
+                    <Link
+                      to="/contact-us"
+                      className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >
+                      Contact
+                    </Link>
+                    <Link
+                      to="/appointment"
+                      className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >
+                      Get Appointment
+                    </Link>
                     {!user?.email ? (
                       <>
                         <Link

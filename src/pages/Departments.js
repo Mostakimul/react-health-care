@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Department = () => {
+const Departments = () => {
   return (
     <div>
       <h3>All Departments</h3>
@@ -8,4 +8,4 @@ const Department = () => {
   );
 };
 
-export default Department;
+export default Departments;

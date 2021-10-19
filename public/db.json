@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor1.jpg",
+    "img": "/img/doctor1.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor2.jpg",
+    "img": "/img/doctor2.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor3.jpg",
+    "img": "/img/doctor3.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor4.jpg",
+    "img": "/img/doctor4.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor5.jpg",
+    "img": "/img/doctor5.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -77,7 +77,7 @@
   {
     "id": 6,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor6.jpg",
+    "img": "/img/doctor6.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -92,7 +92,7 @@
   {
     "id": 7,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor7.jpg",
+    "img": "/img/doctor7.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -107,7 +107,7 @@
   {
     "id": 8,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor8.jpg",
+    "img": "/img/doctor8.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
@@ -122,7 +122,7 @@
   {
     "id": 9,
     "name":"Dr. Babatunde",
-    "img": "./img/doctor9.jpg",
+    "img": "/img/doctor9.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
     "working": [
