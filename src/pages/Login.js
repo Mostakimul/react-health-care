@@ -5,7 +5,6 @@ import bgimg from '../images/page-banner1.jpg';
 
 const Login = () => {
   const { signInUsingGoogle } = useAuth();
-
   return (
     <div>
       <div

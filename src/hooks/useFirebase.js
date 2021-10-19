@@ -12,14 +12,18 @@ initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
   const auth = getAuth();
 
   // google sign in method
   const signInUsingGoogle = () => {
+    setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider).then((result) => {
-      setUser(result.user);
-    });
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        setUser(result.user);
+      })
+      .finally(() => setIsLoading(false));
   };
 
   // state handle observer
@@ -30,16 +34,20 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false);
     });
     return () => unsub; //eslint-disable-next-line
   }, []);
 
   // sign out method
   const logOut = () => {
-    signOut(auth).then(() => {});
+    setIsLoading(true);
+    signOut(auth)
+      .then(() => {})
+      .finally(() => setIsLoading(false));
   };
 
-  return { user, signInUsingGoogle, logOut };
+  return { user, signInUsingGoogle, logOut, isLoading };
 };
 
 export default useFirebase;
