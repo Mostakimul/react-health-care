@@ -45,7 +45,7 @@ const Services = () => {
     },
     {
       icon: ImGrin2,
-      title: 'Detal Care',
+      title: 'Dental Care',
       details: 'Detist are more than 5 years experienced',
     },
     {
@@ -56,7 +56,7 @@ const Services = () => {
   ];
   return (
     <div className="container">
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
         {datas.map((data) => (
           <Service key={data.icon} data={data}></Service>
         ))}
