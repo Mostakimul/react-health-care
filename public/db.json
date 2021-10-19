@@ -16,7 +16,7 @@
   },
   {
     "id": 2,
-    "name":"Dr. Babatunde",
+    "name":"Dr. Addition Smith",
     "img": "/img/doctor2.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
@@ -31,7 +31,7 @@
   },
   {
     "id": 3,
-    "name":"Dr. Babatunde",
+    "name":"Dr. Sarah Taylor",
     "img": "/img/doctor3.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
@@ -46,7 +46,7 @@
   },
   {
     "id": 4,
-    "name":"Dr. Babatunde",
+    "name":"Dr. Mac Smith",
     "img": "/img/doctor4.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
@@ -61,7 +61,7 @@
   },
   {
     "id": 5,
-    "name":"Dr. Babatunde",
+    "name":"Dr. Jas Macham",
     "img": "/img/doctor5.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
@@ -76,7 +76,7 @@
   },
   {
     "id": 6,
-    "name":"Dr. Babatunde",
+    "name":"Dr. Alinson Backer",
     "img": "/img/doctor6.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
@@ -91,7 +91,7 @@
   },
   {
     "id": 7,
-    "name":"Dr. Babatunde",
+    "name":"Dr. Shane Warne",
     "img": "/img/doctor7.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
@@ -106,7 +106,7 @@
   },
   {
     "id": 8,
-    "name":"Dr. Babatunde",
+    "name":"Dr. John Micheal",
     "img": "/img/doctor8.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
@@ -121,7 +121,7 @@
   },
   {
     "id": 9,
-    "name":"Dr. Babatunde",
+    "name":"Dr. Luis Moris",
     "img": "/img/doctor9.jpg",
     "dept": "Neurosurgeon",
     "degree": "MBBS in Neurology, PHD in Neurosurgeon",
