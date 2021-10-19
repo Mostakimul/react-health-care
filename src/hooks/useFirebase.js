@@ -6,6 +6,9 @@ import {
   signOut,
 } from 'firebase/auth';
 import { useEffect, useState } from 'react';
+import initializeAuthentication from '../firebase/firebase.init';
+
+initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
@@ -28,7 +31,7 @@ const useFirebase = () => {
         setUser({});
       }
     });
-    return () => unsub;
+    return () => unsub; //eslint-disable-next-line
   }, []);
 
   // sign out method

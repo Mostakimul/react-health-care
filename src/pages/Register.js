@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
 import bgimg from '../images/page-banner1.jpg';
 
 const Register = () => {
+  const { signInUsingGoogle } = useAuth();
   return (
     <div>
       <div
@@ -72,9 +74,12 @@ const Register = () => {
           </h3>
           <div className="bg-white max-w-lg py-2.5 mx-auto rounded-md shadow-md">
             <div className="flex items-center justify-center space-x-3">
-              <div className="cursor-pointer rounded-full shadow-xl bg-gray-200 p-1">
+              <button
+                onClick={signInUsingGoogle}
+                className="cursor-pointer rounded-full shadow-xl bg-gray-200 p-1"
+              >
                 <img src="/img/google.png" alt="google" />
-              </div>
+              </button>
               <div className="cursor-pointer rounded-full shadow-xl bg-gray-200 p-1">
                 <img src="/img/github.png" alt="github" />
               </div>
