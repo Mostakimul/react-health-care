@@ -7,7 +7,7 @@ const Contact = () => {
       <ThePageHeader header="Contact Us" />
       <div className="bg-gray-200">
         <div className="container py-10">
-          <form className="space-y-3 bg-gray-100 p-5 rounded-md w-2/5 mx-auto">
+          <form className="space-y-3 bg-gray-100 p-5 rounded-md w-full md:w-2/5 mx-auto">
             {/* Name */}
             <label
               htmlFor="name"
