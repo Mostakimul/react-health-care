@@ -13,7 +13,7 @@ const ThePageHeader = (props) => {
       className="h-full py-10"
     >
       <div className="container">
-        <h2 className="text-center text-5xl text-white font-semibold">
+        <h2 className="text-center text-3xl md:text-5xl text-white font-semibold">
           {props.header}
         </h2>
       </div>

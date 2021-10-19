@@ -28,16 +28,20 @@ const TheNavbar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="/img/logo.png"
-                    alt="Disin"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="/img/logo.png"
-                    alt="Disin"
-                  />
+                  <Link to="/">
+                    <img
+                      className="block lg:hidden h-8 w-auto"
+                      src="/img/logo.png"
+                      alt="Disin"
+                    />
+                  </Link>
+                  <Link to="/">
+                    <img
+                      className="hidden lg:block h-8 w-auto"
+                      src="/img/logo.png"
+                      alt="Disin"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
@@ -125,17 +129,47 @@ const TheNavbar = () => {
                 Home
               </Link>
               <Link
-                to="/login"
+                to="/all-doctors"
                 className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Login
+                All Doctors
               </Link>
               <Link
-                to="/register"
+                to="/all-departments"
                 className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Register
+                All Departments
               </Link>
+              <Link
+                to="/contact-us"
+                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
+              >
+                Contact
+              </Link>
+              <Link
+                to="/appointment"
+                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
+              >
+                Get Appointment
+              </Link>
+              {!user?.email ? (
+                <>
+                  <Link
+                    to="/login"
+                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >
+                    Login
+                  </Link>
+                  <Link
+                    to="/register"
+                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >
+                    Register
+                  </Link>
+                </>
+              ) : (
+                ''
+              )}
             </div>
           </Disclosure.Panel>
         </>
