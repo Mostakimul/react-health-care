@@ -14,6 +14,7 @@ import Error from './pages/Error';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Success from './pages/Success';
 
 function App() {
   return (
@@ -39,9 +40,12 @@ function App() {
           <Route path="/all-departments">
             <AllDepartments />
           </Route>
-          <Route path="/doctor-details/:docId">
+          <PrivateRoute path="/doctor-details/:docId">
             <DoctorDetails />
-          </Route>
+          </PrivateRoute>
+          <PrivateRoute path="/appointment-success">
+            <Success />
+          </PrivateRoute>
           <PrivateRoute path="/appointment">
             <Appointment />
           </PrivateRoute>

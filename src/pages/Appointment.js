@@ -1,13 +1,23 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import ThePageHeader from '../components/ThePageHeader';
 
 const Appointment = () => {
+  const history = useHistory();
+
+  const gotoSuccess = (e) => {
+    e.preventDefault();
+    history.push('/appointment-success');
+  };
   return (
     <div>
       <ThePageHeader header="Get Your Appointment" />
       <div className="bg-gray-100">
         <div className="container">
-          <form className="space-y-3 bg-gray-100 p-5 rounded-md w-full md:w-2/5 mx-auto">
+          <form
+            onSubmit={gotoSuccess}
+            className="space-y-3 bg-gray-100 p-5 rounded-md w-full md:w-2/5 mx-auto"
+          >
             {/* Name */}
             <label
               htmlFor="name"
