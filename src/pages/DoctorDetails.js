@@ -5,12 +5,6 @@ import ThePageHeader from '../components/ThePageHeader';
 
 const DoctorDetails = () => {
   const { docId } = useParams();
-  const [docName, setDocName] = useState('');
-  const [docImg, setDocImg] = useState('');
-  const [docDept, setDocDept] = useState('');
-  const [docDegree, setDocDegree] = useState('');
-  const [docBio, setDocBio] = useState('');
-  const [docEducation, setDocEducation] = useState('');
   let [doc, setDoc] = useState({});
 
   // history
@@ -52,7 +46,7 @@ const DoctorDetails = () => {
               {/* grid right side */}
               <div className="bg-white p-5 rounded-lg shadow-lg">
                 <h2 className="text-2xl text-blue-600 text-center font-medium">
-                  {docName} ({doc.dept})
+                  {doc.name} ({doc.dept})
                 </h2>
                 <p className="text-center">{doc.degree}</p>
                 {/* bio */}
