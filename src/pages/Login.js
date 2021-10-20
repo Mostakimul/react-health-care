@@ -1,15 +1,21 @@
 import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import bgimg from '../images/page-banner1.jpg';
 
 const Login = () => {
-  const { signInUsingGoogle } = useAuth();
+  const { signInUsingGoogle, isLoggedIn } = useAuth();
   const [userEmail, setUserEmail] = useState('');
   const [userPassword, setUserPassword] = useState('');
   const [error, setError] = useState('');
   const auth = getAuth();
+
+  // redirect user
+  const history = useHistory();
+  if (isLoggedIn) {
+    history.push('/home');
+  }
 
   // handleLogin
   const handleLogin = (e) => {
@@ -18,6 +24,7 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        history.push('/home');
       })
       .catch((error) => {
         const errorMessage = error.message;

@@ -4,7 +4,7 @@ import {
   updateProfile,
 } from '@firebase/auth';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import bgimg from '../images/page-banner1.jpg';
 
@@ -15,6 +15,7 @@ const Register = () => {
   const [userPassword, setUserPassword] = useState('');
   const [error, setError] = useState('');
   const auth = getAuth();
+  const history = useHistory();
 
   // handleRegister
   const handleRegister = (e) => {
@@ -39,7 +40,11 @@ const Register = () => {
 
   // setDisplayName
   const setDisplayName = () => {
-    updateProfile(auth.currentUser, { displayName: userName }).then(() => {});
+    updateProfile(auth.currentUser, { displayName: userName })
+      .then(() => {})
+      .finally(() => {
+        history.push('/home');
+      });
   };
 
   // handleNameChange
