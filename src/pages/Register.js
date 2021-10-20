@@ -9,13 +9,17 @@ import useAuth from '../hooks/useAuth';
 import bgimg from '../images/page-banner1.jpg';
 
 const Register = () => {
-  const { signInUsingGoogle } = useAuth();
+  const { signInUsingGoogle, isLoggedIn } = useAuth();
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [userPassword, setUserPassword] = useState('');
   const [error, setError] = useState('');
   const auth = getAuth();
   const history = useHistory();
+
+  if (isLoggedIn) {
+    history.push('/home');
+  }
 
   // handleRegister
   const handleRegister = (e) => {
